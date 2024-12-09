@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor</title>
+</head>
+<body>
+    <h1>Vendedor</h1>
+
+    <script>
+        let vendedor = prompt('Digite seu nome: ')
+        let salfi = parseFloat(prompt('salario fixo: '))
+        let toVen = parseFloat(prompt('Total de vendas (em dinheiro): '))
+
+        let acr = toVen * 0.15
+        document.write(`Seu nome é: ${vendedor} <br>`)
+        document.write(`Seu salário fixo é: ${salfi} <br>`)
+        document.write(`O seu ganho no final do mês é: ${(acr + salfi).toFixed(2)}`)
+
+    </script>
+</body>
+</html>
